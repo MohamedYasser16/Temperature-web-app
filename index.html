@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature wep</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+
+    
+    <div class="backGround position-relative p-4 overflow-hidden">
+
+        <div class="circle position-absolute z-n1"></div>
+        <div id="bgSunCloud" class="position-absolute sunbackground z-n1"><img id="nightImg" class="w-100"
+                src="img/icons8-sun-48.png" alt=""></div>
+
+        <div class="container my-1">
+            <div class="row gx-5 align-items-center">
+                <!-- -----------------------------------  left content ------------------------------------------ -->
+                <div class="col-xl-4  col-lg-5 left">
+                    <div class=" rounded-5 p-4 ">
+
+                        <h2 id="city" class="fs-5 text-white mb-2 position-relative"> select a city</h2>
+
+                        <div class="position-relative d-flex align-items-center mt-3 py-2">
+                            <i id="i1" class="fa-solid fa-magnifying-glass position-absolute start-0 ms-2"></i>
+                            <input id="searchInput"
+                                class="rounded-pill bg-transparent border-1 border-black w-100 px-3 text-white p-1"
+                                placeholder="       search a city or airport" type="text">
+                            <div class="position-absolute i2 fs-3 ">
+                                <i id="i2" class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 d-flex align-items-center justify-content-between">
+
+                            <h3 class="fs-5 text-white">Favorites</h3>
+                          
+                          <div class="d-flex flex-column  p-2">
+
+                            <button id="btnSearch"
+                            class="rounded-pill bg-transparent border-2 dash  border-white text-center p-1 text-white-50">search</button>
+                   
+<!-- 
+                            <button id="btClearAll"
+                            class="rounded-pill bg-transparent border-2 dash  border-white text-center p-1 text-white-50  top-100">Clear</button> -->
+
+                          </div>
+                          
+      
+                             </div>
+
+
+                        <div class="container-fluid london overflow-hidden position-relative mt-4 rounded-4 py-3">
+
+                            <div class="item-bg item-bg-dark"></div>
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-6 "> <span id="londonTemp" class="fa-3x text-dark w-100 ms-2"> c</span>
+                                </div>
+                                <div class="col-6">
+                                    <div id="londonImg" class="w-100">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row mt-3">
+                                <div class="col-7">
+                                    <span class="text-dark-50 fa-1x ms-2">max: <span id="maxLondon"
+                                            class="text-dark">12c</span> min:
+                                        <span id="minLondon" class="text-dark">7c</span> </span>
+                                    <h3 class="text-dark fs-4 ms-2"> London , GB</h3>
+                                </div>
+                                <div class="col-5 d-flex align-items-end">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="container-fluid barcelona overflow-hidden position-relative mt-3 rounded-4 py-3">
+
+                            <div class="item-bg item-bg-dark"></div>
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-6 "> <span id="barcelonaTemp" class="fa-3x text-dark w-100 ms-2"> c</span>
+                                </div>
+                                <div class="col-6">
+                                    <div id="barcelonaImg" class="w-100">
+                                        <img class=" img-cloud-left" src="img/icons8-sun-48.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row mt-4">
+                                <div class="col-7">
+                                    <span class="text-dark-50 fa-1x ms-2">max: <span id="maxbarcelona"
+                                            class="text-dark">19c</span> min:
+                                        <span id="minbarcelona" class="text-dark">13c</span> </span>
+                                    <h3 class="text-dark fs-4 ms-2"> barcelona , ES</h3>
+                                </div>
+                                <div class="col-5 d-flex align-items-end">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- --------------------------------------- right content ---------------------------------------------- -->
+                <div class="col-xl-8 col-lg-7  mt-3 right ">
+
+                    <div class="rounded-5 p-3  ">
+
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <h3 id="location" class="text-white-50"></h3>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center">
+                                <input class="night-mode form-check-input px-4 py-3" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                                <div class="iNight">
+                                    <i class="fa-solid fa-moon ms-4 fs-2"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="container mt-4 ">
+                            <div class="row align-items-center justify-content-between ">
+
+                                <div class="col-md-5 d-flex flex-column align-items-center justify-content-center  ">
+
+                                    <div id="img" class="w-300px d-flex align-items-center justify-content-center ">
+                                        <img class="w-250px bigImg"
+                                            src="img/icons8-sun-48.png"
+                                            alt="">
+                                        <!-- <img class="w-100" src="img/vecteezy_sunny-3d-illustration_53336594.png" alt="">
+                                                <img class="w-100" src="img/icons8-sun-48.png" alt="">
+
+                                                <img class="w-100" src="img/vecteezy_ai-generated-3d-cloud-clip-art_40190657.png" alt="">
+                                                <img class="w-100" src="img/vecteezy_weather-sky-cloud-3d-render-icon_34923181.png" alt="">
+                                                <img class="w-100" src="img/vecteezy_sunny-3d-illustration_53336594.png" alt=""> -->
+                                    </div>
+
+                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+
+                                        <div id="datehear"> <span></span> </div>
+                                        <span id="wheather" class="text-white fs-2">weather hear</span>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div
+                                    class="col-md-7 d-flex flex-column align-items-center justify-content-center mt-lg-0 mt-sm-3">
+
+                                    <div>
+                                        <i id="termometer" class="fa-solid fa-temperature-three-quarters fa-3x"></i>
+                                        <span class="fa-3x TC"> 24C</span>
+                                    </div>
+
+                                    <div class="mt-3 table-hover d-flex justify-content-center">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w-50px"> <i class="fa-solid fa-up-long"></i> </td>
+                                                    <td class="w-160px"> <span>Max degrees:</span> </td>
+                                                    <td class=""><span class="max">25C</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <i class="fa-solid fa-up-long fa-rotate-180"></i> </td>
+                                                    <td><span>Min degrees:</span></td>
+                                                    <td> <span class="min">5C</span></td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td ><i class="fa-solid fa-cloud-showers-heavy"></i> </td>
+                                                    <td ><span>Precipitation :</span></td>
+                                                    <td> <span class="">21%</span></td>
+                                                </tr> -->
+                                                <tr>
+                                                    <td class="w-50px"> <i class="fa-solid fa-water"></i> </td>
+                                                    <td class=""> <span>pressure:</span> </td>
+                                                    <td> <span id="pressure" class="">999 mm</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <i class="fa-solid fa-droplet"></i> </td>
+                                                    <td> <span>Humidity:</span> </td>
+                                                    <td> <span id="Humidity" class="">55%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <i class="fa-solid fa-wind"></i> </td>
+                                                    <td> <span>wind:</span> </td>
+                                                    <td> <span id="wind" class="">4.31 m/s</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="d-flex flex-wrap align-items-center justify-content-center mt-5">
+
+
+                                    <div
+                                        class="d-flex align-items-center justify-content-center bg-bink-light w-200px rounded-4 p-3">
+
+                                        <div class="today">
+                                            <h2 class="h4">TODAY</h2>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span id="todayC" class="h2">24C</span>
+                                                <div>
+                                                    <img id="todayimg" class="w-150px" src="img/icons8-sun-48.png"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="text-black-50">Max: <span class="text-dark max"> 25C</span>
+                                                    Min:
+                                                    <span class="text-dark min">14C</span></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="d-flex ms-2 my-2">
+                                        <div
+                                            class="light-mode rounded-top-pill rounded-bottom-pill h-300px mx-3 d-flex flex-column align-items-center py-2">
+                                            <div class="light"><span id="day1" class="mt-4 day fs-4"></span></div>
+                                            <img class="w-90px imgBill" src="img/icons8-sun-behind-small-cloud-48.png"
+                                                alt="">
+                                            <span class="text-info text-blue  humBill"> 90%</span>
+                                            <span class="fs-4 temBill">26C</span>
+                                        </div>
+
+                                        <div
+                                            class="light-mode rounded-top-pill rounded-bottom-pill h-300px mx-3 d-flex flex-column align-items-center py-2">
+                                            <div class="light"><span id="day2" class="mt-4 day fs-4"></span></div>
+                                            <img class="w-90px imgBill" src="img/icons8-sun-behind-small-cloud-48.png"
+                                                alt="">
+                                            <span class="text-info text-blue  humBill"> 90%</span>
+                                            <span class="fs-4 temBill">26C</span>
+                                        </div>
+
+                                        <div
+                                            class="light-mode rounded-top-pill rounded-bottom-pill h-300px mx-3 d-flex flex-column align-items-center py-2">
+                                           <div class="light"><span id="day3" class="mt-4 day fs-4"></span></div>
+                                            <img class="w-90px imgBill" src="img/icons8-sun-behind-small-cloud-48.png"
+                                                alt="">
+                                            <span class="text-info text-blue  humBill"> 90%</span>
+                                            <span class="fs-4 temBill">26C</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

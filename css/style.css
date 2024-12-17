@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#F7ECDE ;
+}
+.bgJs {
+background-color: #342A62 !important;
+}
+/* .backGround {
+
+} */
+.vh-80 {
+    height: 80vh;
+}
+.w-250px {
+    width: 120px;
+}
+.w-300px {
+    margin-bottom: 8px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient( #342A62 ,#5c5493a7 );;
+    border-radius: 50%;
+}
+.w2-300px {
+    margin-bottom: 8px;
+    width: 120px;
+    height: 120px;
+    background-color: #f0ffff2e;
+    border-radius: 50%;
+}
+.light-mode {
+    background-color:#FFF !important;
+}
+.night-modee {
+    background-color:  #342A62 !important;  
+}
+.white-font {
+    color: aliceblue !important ;
+}
+.black-font {
+    color: rgb(27, 26, 26) !important;
+}
+.bg-bink-light {
+    /* background: linear-gradient( 40deg , rgb(230, 227, 230) , rgba(255 , 255 , 255 , 0.9 ) ) */
+    background: linear-gradient( 45deg , #F9F5F6 , #F8FAFC )
+}
+.bg-bink-dark {
+    background: linear-gradient( 40deg , #342A62 50% , rgba(33, 20, 50, 0.9) )
+}
+.w-50px {
+    width: 35px;
+}
+.w-90px {
+    width: 80px;
+}
+.w-150px {
+    width: 110px;
+}
+.w-160px {
+    width: 145px !important;
+}
+.w-200px{
+    width: 200px !important;
+}
+.w-400px {
+    width: 150px !important ;
+}
+
+.h-300px {
+    height: 200px;
+    width: 90px;
+}
+/* .my-row>* {
+    width: auto;
+    justify-content: space-between;
+} */
+.circle {
+    width: 1200px ;
+    height: 1200px ;
+    border-radius: 50%;
+    top: -500px;
+    left: -300px;
+    background-color: #2E275A;
+}
+.circleJs {
+    background-color: #aba4ab !important;
+}
+/* .backSun {
+    background-color: #F7ECDE !important ;
+} */
+.sunbackground {
+    width: 280px;
+    bottom: -60px;
+    left: -160px;
+}
+.sunbackgroundjs {
+    width: 370px;
+    bottom: -100px;
+    right: -100px;
+}
+/* .left>div , .right>div {
+    background: linear-gradient( to right , rgba(255 , 255 , 255 , 0.1) ,rgba(255 , 255 , 255 , 0.002) );
+    box-shadow: 0px 0px 3px rgb(222, 218, 218);
+} */
+.light-lear {
+    background: linear-gradient( to right , rgba(255, 255, 255, 0.063) ,rgba(255 , 255 , 255 , 0.002) )  !important;
+    box-shadow: 0px 0px 2px rgb(222, 218, 218) !important;
+}
+.dark-lear {
+    /* background: linear-gradient( 45deg , rgba(0, 0, 0, 0.1) ,rgba(182, 179, 179, 0.002) ) !important; */
+    background: linear-gradient( 180deg , rgba(0, 0, 0, .4) ,rgba(255, 255, 255, 0.002) ) !important ;
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(182, 179, 179, 0.2)) !important; */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0 ,0.2) !important;
+}
+.i2 {
+    right: 10px;
+    font-weight: 500 !important ;
+}
+.dash {
+    border-style: dashed;
+    width: 100px;
+}
+.button-remove {
+    border-style: dashed; 
+}
+.item-bg {
+    width: 700px;
+    height: 500px;
+    background-color: #2a205b;
+    position: absolute;
+    top: 99px;
+    bottom: 0;
+    left: -100px;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+.item-bg2 {
+    width: 700px;
+    height: 500px;
+    background-color: #57178e;
+    position: absolute;
+    top: 99px;
+    bottom: 0;
+    left: -100px;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+.item-bg-dark {
+    width: 700px;
+    height: 500px;
+    /* background-color: #FAF4F9!important; */
+    /* background-color: #E2E9F3!important; */
+    /* background-color: #F9ECD7!important; */
+    /* background-color: #DFD4ED!important; */
+    background-color: #F1EAFF!important;
+    position: absolute;
+    top: 99px;
+    bottom: 0;
+    left: -100px;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+.item-bg-dark2 {
+    width: 700px;
+    height: 500px;
+    /* background-color: #c3a0bd!important; */
+    /* background-color: #F8D5C1!important; */
+    background-color: #DCBFFF!important;
+    position: absolute;
+    top: 99px;
+    bottom: 0;
+    left: -100px;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+.img-cloud-left , #londonImg>img ,#barcelonaImg>img {
+    width: 100px;
+}
+
+.form-switch .form-check-input {
+    width: 3em;
+    margin-left: -2.5em;
+    background-image: var(--bs-form-switch-bg);
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position .15s ease-in-out;
+}
+
+.form-check-input:checked {
+    background-color: black;
+  
+}
+
+.text-blue {
+    color: rgb(62, 107, 243) !important;
+    font-weight: 600 !important;
+}
